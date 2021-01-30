@@ -1,4 +1,5 @@
 const Record = require("./model");
+const { schema } = require('./validation');
 const { StatusCodes } = require("http-status-codes");
 const { filterRecords, successResponse, errorResponse } = require('./utils');
 
@@ -28,13 +29,12 @@ exports.records = async function ({ body }, res) {
 
   const query = { createdAt: { $gte: start, $lt: end } };
   const fields = 'key createdAt counts';
-
   console.log({ $gte: start, $lt: end });
 
   try {
+    await schema.validate(body);
     const data = await Record.find(query).select(fields);
     const result = filterRecords(data, minCount, maxCount);
-
     res
       .status(StatusCodes.OK)
       .json(successResponse(result));
