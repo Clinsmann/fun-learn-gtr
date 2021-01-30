@@ -1,3 +1,3 @@
-# node-course-list
+# Fun Learn GTR
 
-https://sentry.io/organizations/node-course-list/issues/2182133300/?project=5609830&query=is%3Aunresolved
+will the min and max be included while considering the range
