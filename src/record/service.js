@@ -3,7 +3,15 @@ const { schema } = require('./validation');
 const { StatusCodes } = require("http-status-codes");
 const { filterRecords, successResponse, errorResponse } = require('./utils');
 
-exports.records = async function ({ body }, res) {
+
+exports.home = (req, res) => {
+  res
+    .status(StatusCodes.OK)
+    .json({ message: 'application up and running...' });
+};
+
+
+exports.records = async ({ body }, res) => {
   let {
     minCount,
     maxCount,

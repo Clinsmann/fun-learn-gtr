@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/record", recordController);
+app.use("", recordController);
 
 app.listen(port, () => console.log(`application started on port ${port}...`));
 
