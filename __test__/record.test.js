@@ -12,6 +12,7 @@ const payload = {
   "maxCount": 3000
 };
 
+
 describe('GET "/"', () => {
   it('Should check if the app is up and running', async () => {
     const res = await request(app).get('');
@@ -32,9 +33,9 @@ describe('POST "/api/records"', () => {
   });
 });
 
-describe('POST "/records"', () => {
+describe('POST "/api/records"', () => {
   it('should return an error when making a post request with the wrong payload', async () => {
-    const res = await request(app).post('/record').send(datePayload);
+    const res = await request(app).post('/api/record').send(datePayload);
     expect(res.statusCode).toEqual(400)
     expect(res.body).toHaveProperty('records');
     expect(res.body.records.length).toEqual(0);
