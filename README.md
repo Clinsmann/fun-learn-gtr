@@ -1,9 +1,9 @@
 # Fun Learn GTR
 
-#Endpoint
+# Endpoint
 `POST https://fun-learn-gtr.herokuapp.com/record`
 
-#Repository
+# Repository
 `https://github.com/Clinsmann/fun-learn-gtr`
 
 #To get started
