@@ -1,5 +1,5 @@
 require("dotenv").config();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 const recordController = require("./src/record/controller");
 const homeController = require("./src/home/controller");
