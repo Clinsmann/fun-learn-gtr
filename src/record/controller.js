@@ -1,7 +1,8 @@
 const express = require("express");
-const recordService = require("./service");
 const recordRouter = express.Router();
+const validate = require('./validate');
+const recordService = require("./service");
 
-recordRouter.post("", recordService.records);
+recordRouter.post("", validate, recordService.records);
 
 module.exports = recordRouter;
