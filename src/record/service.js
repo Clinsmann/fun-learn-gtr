@@ -29,7 +29,6 @@ exports.records = async function ({ body }, res) {
 
   const query = { createdAt: { $gte: start, $lt: end } };
   const fields = 'key createdAt counts';
-  console.log({ $gte: start, $lt: end });
 
   try {
     await schema.validate(body);

@@ -16,3 +16,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/record", recordController);
 
 app.listen(port, () => console.log(`application started on port ${port}...`));
+
+module.exports = app;
