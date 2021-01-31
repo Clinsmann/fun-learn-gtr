@@ -2,13 +2,13 @@ const Record = require("./model");
 const { StatusCodes } = require("http-status-codes");
 const { filterRecords, successResponse, errorResponse } = require('./utils');
 
-exports.records = async ({ body }, res) => {
+exports.records = async (req, res) => {
   let {
     minCount,
     maxCount,
     startDate: start,
     endDate: end
-  } = body;
+  } = req.body;
 
   start = new Date(start);
   end = new Date(end);
