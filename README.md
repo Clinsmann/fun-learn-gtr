@@ -1,14 +1,12 @@
 # Fun Learn GTR
 
-will the min and max be included while considering the range
+# Endpoint
+`POST https://fun-learn-gtr.herokuapp.com/record`
 
-NODE/EXPRESS
+# Repository
+`https://github.com/Clinsmann/fun-learn-gtr`
 
-Endpoint : POST https://fun-learn-gtr.herokuapp.com/record
-
-Repository: https://github.com/Clinsmann/fun-learn-gtr
-
-To get started:
+# To get started
 
 1. clone the project `git clone https://github.com/Clinsmann/fun-learn-gtr.git`
 
@@ -16,9 +14,10 @@ To get started:
 
    and add these lines:
 
-   `DATABASE_URL=THE_LINK_TO_THE_MONGO_DB_DATABASE`
-
-   `PORT=5000`
+   ```
+   DATABASE_URL=THE_LINK_TO_THE_MONGO_DB_DATABASE
+   PORT=5000
+   ```
 
 3. `cd fun-learn-gtr`
 
@@ -27,3 +26,5 @@ To get started:
 5. `npm start`
 
 6. `npm run test`
+
+Now you should be able to use the endpoint.
