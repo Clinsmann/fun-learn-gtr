@@ -6,7 +6,7 @@
 # Repository
 `https://github.com/Clinsmann/fun-learn-gtr`
 
-#To get started
+# To get started
 
 1. clone the project `git clone https://github.com/Clinsmann/fun-learn-gtr.git`
 
