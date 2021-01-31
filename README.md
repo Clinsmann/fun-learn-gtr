@@ -2,7 +2,7 @@
 
 # Endpoint
 
-`POST [https://fun-learn-gtr.herokuapp.com/api/record](https://fun-learn-gtr.herokuapp.com/api/record)`
+`POST https://fun-learn-gtr.herokuapp.com/api/record`
 
 # Repository
 
