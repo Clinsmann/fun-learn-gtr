@@ -12,7 +12,7 @@ require("./src/database/mongoose");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
-app.use("/record", recordController);
+app.use("/api/record", recordController);
 app.use("", homeController);
 
 app.listen(port, () => console.log(`application started on port ${port}...`));

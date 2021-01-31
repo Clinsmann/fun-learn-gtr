@@ -20,9 +20,9 @@ describe('GET "/"', () => {
   });
 });
 
-describe('POST "/records"', () => {
+describe('POST "/api/records"', () => {
   it('should make a post request to the records endpoint', async () => {
-    const res = await request(app).post('/record').send(payload);
+    const res = await request(app).post('/api/record').send(payload);
     expect(res.statusCode).toEqual(200)
     expect(res.body).toHaveProperty('records');
     res.body.records.every(({ totalCount, createdAt }) => {
